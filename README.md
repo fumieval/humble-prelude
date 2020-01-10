@@ -15,7 +15,7 @@ So any Haskell source based on `HumblePrelude` should also be buildable with `Pr
 
 For those who want more convenience, `HumblePrelude.Extras` reexports things that are frequently imported only for a single symbol (e.g. Generic for deriving). But __nothing else__.
 
-Recommended packages
+Recommended libraries to complement this package
 ----
 
 * Transmit byte sequence efficiently into a handle or a socket, or a new ByteString: [mason](https://hackage.haskell.org/package/mason)
@@ -23,3 +23,5 @@ Recommended packages
 * Concurrency, exceptions, process handling and file operations: [unliftio](https://hackage.haskell.org/package/unliftio)
 * Safely obtain minimum/maximum values: [lens:Control.Lens.fold](http://hackage.haskell.org/package/lens-4.18.1/docs/Control-Lens-Fold.html#v:minimumOf)
 * Parsing: [attoparsec](https://hackage.haskell.org/package/attoparsec)
+* Manipulating non-empty structures: [semigroupoids](http://hackage.haskell.org/package/semigroupoids)
+* Generic filters: [witherable](https://hackage.haskell.org/package/witherable)
