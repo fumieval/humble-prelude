@@ -4,15 +4,13 @@
 -- |
 -- Module      :  HumblePrelude
 -- Copyright   :  (c) Fumiaki Kinoshita 2020, The University of Glasgow 2001
--- License     :  BSD-style (see the file libraries/base/LICENSE)
+-- License     :  BSD-style (see the file LICENSE)
 --
 -- Maintainer  :  fumiexcel@gmail.com
 -- Stability   :  experimental
 -- Portability :  portable
 --
--- The Prelude: a standard module. The Prelude is imported by default
--- into all Haskell modules unless either there is an explicit import
--- statement for it, or the NoImplicitPrelude extension is enabled.
+-- Prelude without unsafe or inefficient functions.
 --
 -----------------------------------------------------------------------------
 

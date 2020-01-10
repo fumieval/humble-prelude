@@ -1,3 +1,16 @@
+-----------------------------------------------------------------------------
+-- |
+-- Module      :  HumblePrelude.Extras
+-- Copyright   :  (c) Fumiaki Kinoshita 2020
+-- License     :  BSD-style (see the file LICENSE)
+--
+-- Maintainer  :  fumiexcel@gmail.com
+-- Stability   :  experimental
+-- Portability :  portable
+--
+-- HumblePrelude with uncontroversial, frequently used types and functions
+--
+-----------------------------------------------------------------------------
 module HumblePrelude.Extras (
   -- * Control.Applicative
   liftA2
