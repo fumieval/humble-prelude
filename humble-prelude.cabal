@@ -2,15 +2,19 @@ cabal-version:       2.4
 name:                humble-prelude
 version:             0
 synopsis:            Get rid of bad habits
--- description:
--- bug-reports:
--- license:
+description:         See README.md.........
+bug-reports:         https://github.com/fumieval/humble-prelude
+license:             BSD-3-Clause
 license-file:        LICENSE
 author:              Fumiaki Kinoshita
 maintainer:          fumiexcel@gmail.com
 copyright:           Copyright (c) Fumiaki Kinoshita
--- category:
+category:            Prelude
 extra-source-files:  CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com/fumieval/humble-prelude
 
 library
   exposed-modules:
