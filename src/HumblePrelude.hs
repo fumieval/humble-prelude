@@ -74,7 +74,7 @@ module HumblePrelude (
     Functor(fmap, (<$)), (<$>),
     Applicative(pure, (<*>), (*>), (<*)),
     Monad((>>=), (>>), return),
-    MonadFail(fail),
+    MonadFail,
     mapM_, sequence_, (=<<),
 
     -- ** Folds and traversals
@@ -85,10 +85,6 @@ module HumblePrelude (
              -- foldr', -- :: (a -> b -> b) -> b -> t a -> b
              foldl,     -- :: (b -> a -> b) -> b -> t a -> b
              -- foldl', -- :: (b -> a -> b) -> b -> t a -> b
-             foldr1,    -- :: (a -> a -> a) -> t a -> a
-             foldl1,    -- :: (a -> a -> a) -> t a -> a
-             maximum,   -- :: (Foldable t, Ord a) => t a -> a
-             minimum,   -- :: (Foldable t, Ord a) => t a -> a
              product,   -- :: (Foldable t, Num a) => t a -> a
              sum),      -- :: Num a => t a -> a
              -- toList) -- :: Foldable t => t a -> [a]
