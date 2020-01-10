@@ -1,5 +1,4 @@
 {-# LANGUAGE Trustworthy #-}
-{-# LANGUAGE NoImplicitPrelude #-}
 
 -----------------------------------------------------------------------------
 -- |
@@ -114,7 +113,6 @@ module HumblePrelude (
 import Control.Monad
 import Control.Monad.Fail
 import System.IO
-import System.IO.Error
 import Data.List
 import Data.Either
 import Data.Foldable    ( Foldable(..) )
@@ -124,7 +122,6 @@ import Data.Traversable ( Traversable(..) )
 import Data.Tuple
 
 import GHC.Base hiding ( foldr, mapM, sequence )
-import Text.Read
 import GHC.Enum
 import GHC.Num
 import GHC.Real

@@ -1,4 +1,4 @@
-humble-prelude: get rid of bad habits
+humble-prelude: the worst prelude alternative
 ====
 
 [![Build Status](https://travis-ci.org/fumieval/humble-prelude.svg?branch=master)](https://travis-ci.org/fumieval/humble-prelude)
@@ -11,9 +11,20 @@ This library aims to be an intersection of the current prelude ands "how it shou
 * Provide new functions
 * Reexport a bunch of other libraries
 
-So any Haskell source based on `HumblePrelude` should also be buildable with `Prelude`.
+Instead it's a subset of Prelude. Any Haskell source based on `HumblePrelude` should also be buildable with `Prelude`.
 
-For those who want more convenience, `HumblePrelude.Extras` reexports things that are frequently imported only for a single symbol (e.g. Generic for deriving). But __nothing else__.
+For those who want more convenience, `HumblePrelude.Extras` reexports things that are frequently imported only for one or two symbols (e.g. Generic for deriving). But __nothing else__.
+
+Plugin
+----
+
+One of the well-known problems of Prelude alternatives is the tempo loss of importing the module itself.
+humble-prelude offers a GHC plugin that imports any module specified in the flag. Add the following lines into your cabal file:
+
+```
+  ghc-options: -fplugin=HumblePrelude.Plugin -fplugin-opt=HumblePrelude.Plugin:HumblePrelude.Extras
+  default-extensions: NoImplicitPrelude
+```
 
 Recommended libraries to complement this package
 ----
