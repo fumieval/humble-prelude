@@ -68,12 +68,12 @@ module HumblePrelude (
 
     -- ** Semigroups and Monoids
     Semigroup((<>)),
-    Monoid(mempty, mappend, mconcat),
+    Monoid(mempty, mconcat),
 
     -- ** Monads and functors
     Functor(fmap, (<$)), (<$>),
     Applicative(pure, (<*>), (*>), (<*)),
-    Monad((>>=), (>>), return),
+    Monad((>>=)),
     MonadFail,
     mapM_, sequence_, (=<<),
 
