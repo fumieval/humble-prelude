@@ -4,11 +4,11 @@
 -----------------------------------------------------------------------------
 -- |
 -- Module      :  HumblePrelude
--- Copyright   :  (c) The University of Glasgow 2001
+-- Copyright   :  (c) Fumiaki Kinoshita 2020, The University of Glasgow 2001
 -- License     :  BSD-style (see the file libraries/base/LICENSE)
 --
--- Maintainer  :  libraries@haskell.org
--- Stability   :  stable
+-- Maintainer  :  fumiexcel@gmail.com
+-- Stability   :  experimental
 -- Portability :  portable
 --
 -- The Prelude: a standard module. The Prelude is imported by default
@@ -40,8 +40,7 @@ module HumblePrelude (
     -- ** Basic type classes
     Eq((==), (/=)),
     Ord(compare, (<), (<=), (>=), (>), max, min),
-    Enum(succ, pred, toEnum, fromEnum, enumFrom, enumFromThen,
-         enumFromTo, enumFromThenTo),
+    Enum(fromEnum),
     Bounded(minBound, maxBound),
 
     -- ** Numbers

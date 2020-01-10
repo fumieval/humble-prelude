@@ -1,8 +1,8 @@
 cabal-version:       2.4
 name:                humble-prelude
 version:             0
-synopsis:            Get rid of bad habits
-description:         See README.md.........
+synopsis:            Redefinition-free prelude alternative
+description:         See README.md.........................
 bug-reports:         https://github.com/fumieval/humble-prelude
 license:             BSD-3-Clause
 license-file:        LICENSE
