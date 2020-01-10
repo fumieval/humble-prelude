@@ -1,0 +1,22 @@
+cabal-version:       2.4
+name:                humble-prelude
+version:             0
+synopsis:            Get rid of bad habits
+-- description:
+-- bug-reports:
+-- license:
+license-file:        LICENSE
+author:              Fumiaki Kinoshita
+maintainer:          fumiexcel@gmail.com
+copyright:           Copyright (c) Fumiaki Kinoshita
+-- category:
+extra-source-files:  CHANGELOG.md
+
+library
+  exposed-modules:
+    HumblePrelude
+  -- other-modules:
+  -- other-extensions:
+  build-depends:       base >=4.12.0.0 && <5
+  hs-source-dirs: src
+  default-language:    Haskell2010
