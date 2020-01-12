@@ -89,7 +89,7 @@ module HumblePrelude (
 
     -- ** Miscellaneous functions
     id, const, (.), flip, ($), until,
-    asTypeOf, error, errorWithoutStackTrace,
+    asTypeOf,
     seq, ($!),
 
     -- * Foldable operations
