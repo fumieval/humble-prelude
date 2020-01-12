@@ -22,7 +22,7 @@ One of the well-known problems of Prelude alternatives is the tempo loss of impo
 humble-prelude offers a GHC plugin that imports any module specified in the flag. Add the following lines into your cabal file:
 
 ```
-  ghc-options: -fplugin=HumblePrelude.Plugin
+  ghc-options: -fplugin=HumblePrelude.Extras
   default-extensions: NoImplicitPrelude
 ```
 

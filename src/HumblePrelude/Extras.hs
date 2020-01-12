@@ -43,6 +43,8 @@ module HumblePrelude.Extras (
   , Text
   , Type
   , module HumblePrelude
+  -- * Plugin
+  , plugin
   ) where
 
 import Control.Applicative
@@ -60,3 +62,9 @@ import Data.Text (Text)
 import Data.Traversable
 import GHC.Generics (Generic)
 import HumblePrelude
+import HumblePrelude.Plugin
+
+
+-- | @Usage: -fplugin=HumblePrelude.Extras@
+plugin :: Plugin
+plugin = importPlugin ["HumblePrelude.Extras"]

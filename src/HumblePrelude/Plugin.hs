@@ -12,20 +12,19 @@
 -- GHC plugin which adds imports to specified modules
 --
 -----------------------------------------------------------------------------
-module HumblePrelude.Plugin (plugin) where
+module HumblePrelude.Plugin (Plugin, importPlugin) where
 
 import HumblePrelude
 import GhcPlugins hiding ((<>))
 import HsSyn (hsmodImports, simpleImportDecl)
 
--- | @Usage: -fplugin=HumblePrelude.Plugin@
-plugin :: Plugin
-plugin = defaultPlugin
-  { parsedResultAction = parsedPlugin
+-- | A GHC plugin that imports specified modules
+importPlugin :: [String] -> Plugin
+importPlugin mods = defaultPlugin
+  { parsedResultAction = parsedPlugin . (mods<>)
   , pluginRecompile = flagRecompile }
 
 parsedPlugin :: [CommandLineOption] -> ModSummary -> HsParsedModule -> Hsc HsParsedModule
-parsedPlugin [] ms hpm = parsedPlugin ["HumblePrelude.Extras"] ms hpm
 parsedPlugin mods _ pm = do
   let rep = noLoc . simpleImportDecl . mkModuleName <$> mods
   pure pm { hpm_module = fmap (\m -> m { hsmodImports = rep <> hsmodImports m }) $ hpm_module pm }
