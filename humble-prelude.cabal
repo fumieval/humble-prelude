@@ -1,6 +1,6 @@
 cabal-version:       2.4
 name:                humble-prelude
-version:             0.1
+version:             0.2
 synopsis:            Redefinition-free prelude alternative
 description:         See README.md.........................
 bug-reports:         https://github.com/fumieval/humble-prelude
